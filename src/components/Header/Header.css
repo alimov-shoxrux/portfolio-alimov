@@ -1,0 +1,50 @@
+.Header {
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 100;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), );
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-left: 40px;
+
+    a {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+
+.header__link:hover {
+    color: #ffffff69;
+}
+
+.header__logo {
+    font-family: 'Dancing Script', sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.Headerfiexd {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+    background: linear-gradient(135deg, #16053f, #010007);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}

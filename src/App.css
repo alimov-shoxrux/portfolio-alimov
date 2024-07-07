@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+body {
+    font-family: sans-serifs;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    width: 50px;
+    transition: all 2s ease !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
