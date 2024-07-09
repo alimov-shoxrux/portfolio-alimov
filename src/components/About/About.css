@@ -39,10 +39,7 @@
 }
 
 .About {
-    background: url(../../assets/img/bg-content.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .about__container {

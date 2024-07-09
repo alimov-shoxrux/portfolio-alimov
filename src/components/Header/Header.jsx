@@ -53,7 +53,7 @@ function Header() {
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
-                                offset={0}
+                                offset={-40}
                                 duration={500}
                             >
                                 About
@@ -64,7 +64,7 @@ function Header() {
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-100}
                                 duration={500}
                             >
                                 Skills
@@ -75,7 +75,7 @@ function Header() {
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
-                                offset={200}
+                                offset={-20}
                                 duration={500}
                             >
                                 Contact

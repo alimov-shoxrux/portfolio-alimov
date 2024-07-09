@@ -1,0 +1,103 @@
+.contact__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact {
+    padding: 100px 0;
+}
+
+.contact__form {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 10, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 10, 0.15) 0px 0px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+.contact__title {
+    font-family: Kurale;
+    font-weight: 400;
+    font-size: 45.4px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contact__first__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__second__div {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+label {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact__input {
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 50px;
+    width: 350px;
+    height: 50px;
+    padding-left: 20px;
+    outline: none;
+    cursor: text;
+
+}
+
+.label__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &:nth-child(odd) {
+        margin-right: 100px;
+    }
+}
+
+.contact__big__input {
+    width: 730px;
+    height: 100px;
+    border-radius: 12px;
+}
+
+.contact__btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 50px;
+    background: linear-gradient(-180deg, rgb(255, 195, 50) 0%, rgb(235, 0, 117) 96%) no-repeat;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    animation: gradient 1.5s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

@@ -5,6 +5,7 @@ import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
 import up from '././assets/img/up.svg'
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -35,6 +36,7 @@ function App() {
       <Hero />
       <About/>
       <Content />
+      <Contact/>
       <button className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none' }}>
         <img src={up} alt="" />
       </button>

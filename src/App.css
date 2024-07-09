@@ -15,6 +15,10 @@
 
 body {
     font-family: sans-serifs;
+    background: url(././assets/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 ul,

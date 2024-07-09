@@ -1,14 +1,13 @@
   .Content {
     /* background: url(../../assets/img/bg-content.jpg); */
-    background: #eee;
+    /* background: #eee; */
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0px 0 100px 0;
+    padding: 70px 0 100px 0;
   }
 
   .contact__container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto !important;
@@ -28,9 +27,7 @@
     position: relative;
   }
 
-  .contact__div:nth-of-type(odd) {
-    margin-right: 100px;
-  }
+  
 
   .contact__div__title {
     color: white;
@@ -48,73 +45,83 @@
     z-index: 2;
   }
 
-  /* .contact__div:before {
-    content: "";
-    position: absolute;
-    inset: 0px;
-    background-color: rgba(0, 0, 10, 0.678);
-    border-radius: 10px;
-  }
+ 
 
-  .contact__div:hover::before{
-    background-color: rgba(0, 0, 10, 0.461);
-  } */
-
-  .drop {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
-      15px 25px 10px rgba(0, 0, 0, 0.06),
-      15px 20px 10px rgba(0, 0, 0, 0.05),
-      inset -10px -10px 15px rgba(255, 255, 255, 0.9);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 50px;
-
-  }
-  .drop:not(:first-child){
-    margin-left: 50px;
-  }
-
-  .drop::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    top: 35px;
-    left: 20px;
-  }
-
-  .drop::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #fff;
-    top: 15px;
-    left: 50px;
-  }
-
-  .drop ion-icon {
+  ion-icon {
     font-size: 5em;
-    color: #444;
+    color: white;
   }
 
-  .contact__drop__one{
+  .contact__drop__one {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
   }
 
-  .contact__drop__two{
+  .contact__drop__two {
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+
+  .slider-thumb {
+    background: transparent;
+    position: relative;
+    width: 150px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &:not(:first-child){
+      margin-left: 50px;
+    }
+  }
+
+
+
+  .slider-thumb::before {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(90deg, #e52e71, #ff8a00);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+
+  @keyframes sliderShape {
+
+    0%,
+    100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+      transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+  }
+
+  .slider-thumb i{
+    font-size: 5em;
+    color: white;
   }

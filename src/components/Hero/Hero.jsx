@@ -4,6 +4,7 @@ import Typed from 'typed.js';
 import close from '../../assets/img/close.svg'
 import share from '../../assets/img/share.svg'
 import { Link } from 'react-scroll';
+import wavebg from '../../assets/img/waveimg.svg'
 
 function Hero() {
     const [clicked, setClicked] = useState(false);
@@ -27,7 +28,7 @@ function Hero() {
 
     return (
         <div className='Hero' id='hero' name='hero'>
-            <div className="container">
+            <div className="container hero__content">
                 <div className="hero__container">
                     <div className="hero__left">
                         <h1 className='hero__left__title'>Hello, Discover My Work </h1>
@@ -80,6 +81,8 @@ function Hero() {
                     </div>
                 </div>
 
+            <div class="animated-divider">
+            </div>
             </div>
         </div>
     );

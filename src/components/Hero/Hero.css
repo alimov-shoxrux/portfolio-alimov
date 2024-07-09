@@ -1,8 +1,5 @@
 .Hero {
     padding: 250px 0;
-    background: url(../../assets/img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
@@ -164,4 +161,5 @@
     opacity: 0;
     transition: 0.5s ease;
 }
+
 
