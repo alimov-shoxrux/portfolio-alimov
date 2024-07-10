@@ -1,0 +1,32 @@
+.time__title {
+    font-family: Kurale;
+    font-weight: 400;
+    font-size: 50.4px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.time__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Time {
+    padding: 100px 0;
+}
+
+.time__container__title {
+    color: rgb(255, 195, 50);
+    margin-bottom: 20px;
+    font-family: Kurale;
+    font-weight: 400;
+    font-size: 31.36px;
+}
+
+.time__container__link{
+    color: white;
+    font-size:17px;
+}

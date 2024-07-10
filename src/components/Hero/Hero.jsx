@@ -41,7 +41,7 @@ function Hero() {
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-100}
                                 duration={500}
                                 className='hero__left__first'>
                                 Skills
@@ -51,13 +51,12 @@ function Hero() {
                                 to="about"
                                 spy={true}
                                 smooth={true}
-                                offset={0}
+                                offset={-30}
                                 duration={500} className='hero__left__second'>About</Link>
                         </div>
 
                     </div>
                     <div className="hero__right">
-                        ``
                         <div className={clicked ? 'hero__right__imgs' : 'hidden'}>
                             <a href="https://github.com/shokhruhmirzo">
                                 <i className="bi bi-github"></i>
@@ -81,8 +80,8 @@ function Hero() {
                     </div>
                 </div>
 
-            <div class="animated-divider">
-            </div>
+                <div class="animated-divider">
+                </div>
             </div>
         </div>
     );

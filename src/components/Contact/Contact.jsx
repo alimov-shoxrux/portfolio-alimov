@@ -40,6 +40,7 @@ function Contact() {
             <div className="container contact__container" >
                 <form onSubmit={onSubmit} className='contact__form' >
                     <h2 className='contact__title'>Free consultation</h2>
+                    <h5 className='contact__me'>Contact me</h5>
                     <div className='contact__first__div'>
                         <div className='label__input'>
                             <Box
@@ -58,12 +59,13 @@ function Contact() {
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
                                     },
+                                    '& .MuiInput-underline:after': {
+                                        borderBottomColor: 'white',
+                                    },
                                     '& .MuiInput-underline:hover:before': {
                                         borderBottomColor: 'white',
                                     },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'white',
-                                    }, '& .MuiInput-underline:hover': {
+                                    '& .MuiInput-underline:hover:after': {
                                         borderBottomColor: 'white',
                                     },
                                 }}
@@ -92,55 +94,20 @@ function Contact() {
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
                                     },
+                                    '& .MuiInput-underline:after': {
+                                        borderBottomColor: 'white',
+                                    },
                                     '& .MuiInput-underline:hover:before': {
                                         borderBottomColor: 'white',
                                     },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'white',
-                                    }, '& .MuiInput-underline:hover': {
+                                    '& .MuiInput-underline:hover:after': {
                                         borderBottomColor: 'white',
                                     },
                                 }}
                                 noValidate
                                 autoComplete="off"
                             >
-                                <TextField id="standard-basic" label="Email" name='email' variant="standard" required />
-                            </Box>
-                        </div>
-                    </div>
-                    <div className='contact__second__div'>
-                        <div className='label__input'>
-
-                            <Box
-                                component="div"
-                                sx={{
-                                    '& > :not(style)': { m: 1, width: '25ch' },
-                                    '& .MuiInputBase-root': {
-                                        color: 'white',
-                                    },
-                                    '& .MuiInputLabel-root': {
-                                        color: 'white',
-                                    },
-                                    '& .MuiInputLabel-root.Mui-focused': {
-                                        color: 'white',
-                                    },
-                                    '& .MuiInput-underline:before': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:hover:before': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:after': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:hover': {
-                                        borderBottomColor: 'white',
-                                    }
-                                }}
-                                noValidate
-                                autoComplete="off"
-                            >
-                                <TextField id="standard-basic" name='phone' label="Phone" variant="standard" required />
+                                <TextField id="standard-basic" type='email' label="Email" name='email' variant="standard" required />
                             </Box>
                         </div>
                         <div className='label__input'>
@@ -161,20 +128,54 @@ function Contact() {
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
                                     },
+                                    '& .MuiInput-underline:after': {    
+                                        borderBottomColor: 'white',
+                                    },
                                     '& .MuiInput-underline:hover:before': {
                                         borderBottomColor: 'white',
                                     },
-                                    '& .MuiInput-underline:hover': {
-                                        borderBottomColor: 'white',
-                                    },
-                                    '& .MuiInput-underline:after': {
+                                    '& .MuiInput-underline:hover:after': {
                                         borderBottomColor: 'white',
                                     },
                                 }}
                                 noValidate
                                 autoComplete="off"
                             >
-                                <TextField id="standard-basic" name='message' label="Message" variant="standard" required />
+                                <TextField id="standard-basic" label="Phone" name='phone' variant="standard" required />
+                            </Box>
+                        </div>
+                        <div className='label__input'>
+
+                            <Box
+                                component="div"
+                                sx={{
+                                    '& > :not(style)': { m: 1, width: '25ch' },
+                                    '& .MuiInputBase-root': {
+                                        color: 'white',
+                                    },
+                                    '& .MuiInputLabel-root': {
+                                        color: 'white',
+                                    },
+                                    '& .MuiInputLabel-root.Mui-focused': {
+                                        color: 'white',
+                                    },
+                                    '& .MuiInput-underline:before': {
+                                        borderBottomColor: 'white',
+                                    },
+                                    '& .MuiInput-underline:after': {
+                                        borderBottomColor: 'white',
+                                    },
+                                    '& .MuiInput-underline:hover:before': {
+                                        borderBottomColor: 'white',
+                                    },
+                                    '& .MuiInput-underline:hover:after': {
+                                        borderBottomColor: 'white',
+                                    },
+                                }}
+                                noValidate
+                                autoComplete="off"
+                            >
+                                <TextField id="standard-basic" label="Message" name='message' variant="standard" required />
                             </Box>
                         </div>
                     </div>

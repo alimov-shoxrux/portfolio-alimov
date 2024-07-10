@@ -6,6 +6,10 @@ import Hero from './components/Hero/Hero'
 import up from '././assets/img/up.svg'
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import Time from './components/Time/Time';
+import Footer from './components/Footer/Footer';
+import Wave from './components/Wave/Wave';
+import Work from './components/Work/Work';
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -34,9 +38,13 @@ function App() {
     <div className='App'>
       <Header />
       <Hero />
-      <About/>
+      <About />
+      <Work />
       <Content />
-      <Contact/>
+      <Time />
+      <Contact />
+      <Wave />
+      <Footer />
       <button className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none' }}>
         <img src={up} alt="" />
       </button>

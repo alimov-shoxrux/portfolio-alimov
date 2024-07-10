@@ -5,7 +5,7 @@
 }
 
 .Contact {
-    padding: 100px 0;
+    padding: 100px 0 300px 0;
 }
 
 .contact__form {
@@ -27,7 +27,7 @@
     font-weight: 400;
     font-size: 45.4px;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .contact__first__div {
@@ -60,15 +60,6 @@ label {
 
 }
 
-.label__input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    &:nth-child(odd) {
-        margin-right: 100px;
-    }
-}
 
 .contact__big__input {
     width: 730px;
@@ -94,10 +85,28 @@ label {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
+.contact__me {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.contact__first__div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    row-gap: 50px;
+}
+
