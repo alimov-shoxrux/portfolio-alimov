@@ -60,6 +60,17 @@ function Header() {
                             </Link>
                         </li>
                         <li className='header__item'>
+                            <Link to="work"
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                offset={0}
+                                duration={500}
+                            >
+                                Works
+                            </Link>
+                        </li>
+                        <li className='header__item'>
                             <Link to="content"
                                 activeClass="active"
                                 spy={true}

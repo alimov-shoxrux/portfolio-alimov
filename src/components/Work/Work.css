@@ -1,0 +1,79 @@
+.Work {
+    padding: 100px 0;
+}
+
+.work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+}
+
+.work__div {
+    width: 300px;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(0, 0, 10, 0.15) 0px 0px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2)
+}
+
+.work__div img {
+    width: 100%;
+    left: 0;
+    height: 200px;
+    border-radius: 20px;
+}
+
+
+
+
+
+.work__container__title {
+    color: rgb(255, 195, 50);
+    font-size: 30px;
+    padding-top: 10px;
+    text-align: center;
+    cursor: text;
+}
+
+.work__container__text {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    line-height: 20px;
+    cursor: text;
+}
+
+.work__div__texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px 0 20px;
+}
+
+.work__visit {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.link__icon {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.work__icon {
+    color: white;
+    margin-top: 20px;
+}

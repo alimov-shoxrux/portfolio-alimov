@@ -5,7 +5,7 @@ import './Footer.css'
 function Footer() {
     return (
         <div className='Footer'>
-        
+
             <div className="container">
                 <ul className='footer__list'>
                     <li className='footer__item'>
@@ -29,6 +29,17 @@ function Footer() {
                             duration={500}
                         >
                             About
+                        </Link>
+                    </li>
+                    <li className='footer__item'>
+                        <Link to="work"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            Works
                         </Link>
                     </li>
                     <li className='footer__item'>
