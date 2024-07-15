@@ -128,7 +128,7 @@ function Contact() {
                                     '& .MuiInput-underline:before': {
                                         borderBottomColor: 'white',
                                     },
-                                    '& .MuiInput-underline:after': {    
+                                    '& .MuiInput-underline:after': {
                                         borderBottomColor: 'white',
                                     },
                                     '& .MuiInput-underline:hover:before': {
