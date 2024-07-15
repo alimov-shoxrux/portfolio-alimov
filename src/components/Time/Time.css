@@ -26,7 +26,38 @@
     font-size: 31.36px;
 }
 
-.time__container__link{
+.time__container__link {
     color: white;
-    font-size:17px;
+    font-size: 17px;
+}
+
+@media (max-width:700px) {
+    .time__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .time__container__title {
+        text-align: center;
+    }
+
+    .time__container__link {
+        text-align: center;
+    }
+
+    .time__div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .time__title {
+        font-size: 35px;
+    }
+
+    .time__container__title {
+        font-size: 25px;
+    }
 }

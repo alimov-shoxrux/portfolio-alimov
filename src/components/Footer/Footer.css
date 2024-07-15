@@ -51,9 +51,31 @@
 .footer__down__list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     line-height: 20px;
     letter-spacing: 5px;
 }
 
 
+.footer__link {
+    color: white;
+}
+
+
+@media(max-width:600px){
+  .footer__item{
+    a{
+        font-size: 15px;
+    }
+  }
+}
+
+@media (max-width:450px){
+    .footer__logo{
+        font-size: 30px;
+    }
+   
+      .footer__list{
+        display: none;
+      }
+}

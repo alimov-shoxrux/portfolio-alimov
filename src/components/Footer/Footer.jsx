@@ -9,7 +9,7 @@ function Footer() {
             <div className="container">
                 <ul className='footer__list'>
                     <li className='footer__item'>
-                        <Link
+                        <Link className='footer__link'
                             activeClass="active"
                             to="hero"
                             spy={true}
@@ -21,7 +21,7 @@ function Footer() {
                         </Link>
                     </li>
                     <li className='footer__item'>
-                        <Link to="about"
+                        <Link  className='footer__link' to="about"
                             activeClass="active"
                             spy={true}
                             smooth={true}
@@ -32,7 +32,7 @@ function Footer() {
                         </Link>
                     </li>
                     <li className='footer__item'>
-                        <Link to="work"
+                        <Link className='footer__link' to="work"
                             activeClass="active"
                             spy={true}
                             smooth={true}
@@ -43,7 +43,7 @@ function Footer() {
                         </Link>
                     </li>
                     <li className='footer__item'>
-                        <Link to="content"
+                        <Link  className='footer__link' to="content"
                             activeClass="active"
                             spy={true}
                             smooth={true}
@@ -54,7 +54,7 @@ function Footer() {
                         </Link>
                     </li>
                     <li className='footer__item'>
-                        <Link to="contact"
+                        <Link  className='footer__link' to="contact"
                             activeClass="active"
                             spy={true}
                             smooth={true}
@@ -72,7 +72,6 @@ function Footer() {
                     <a className='footer__logo' href="#">
                         Alimov
                     </a>
-
 
                     <p className='footer__success'>® A step for success</p>
                 </div>

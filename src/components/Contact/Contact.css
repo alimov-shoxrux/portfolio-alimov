@@ -110,3 +110,37 @@ label {
     row-gap: 50px;
 }
 
+@media (max-width:620px) {
+    .contact__first__div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px) {
+    .contact__title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:400px) {
+    .contact__title {
+        font-size: 25px;
+    }
+
+    .contact__me {
+        font-size: 15px;
+    }
+
+    .contact__btn {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .contact__first__div {
+        row-gap: 20px;
+    }
+}
+
