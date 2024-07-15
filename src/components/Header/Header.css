@@ -90,6 +90,7 @@
 
 #offcanvasRight {
     width: 40%;
+    height: 100vh;
     background: rgba(0, 0, 10, 0.5);
     backdrop-filter: blur(15px);
     border-radius: 50px 0 0 0;
