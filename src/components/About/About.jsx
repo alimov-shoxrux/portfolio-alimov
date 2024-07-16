@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './About.css'
 import me from '../../assets/img/portrait.jpg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'   
 
 function About() {
+    useEffect(() => {
+        Aos.init();
+      }, [])
     return (
         <div className='About' id='about'>
             <div className="container__about">
                 <div className="about__container">
                     {/* left */}
-                    <div className='me__img__father'>
+                    <div className='me__img__father' data-aos="fade-right">
                         <svg xmlns="http://www.w3.org/2000/svg" width="650" height="650"
                             viewBox="-25 -25 250 250" className="rotate">
                             <defs>
@@ -24,10 +29,10 @@ function About() {
                         </div>
                     </div>
                     <div className="about__right">
-                        <h2 className='about__right__title'>Hello , My name is Shoxrux</h2>
-                        <p className='about__right__text'>Welcome to my personal portfolio website,you can see my goal , my skills, and works in there.I have been learning social media for 3 years. And now I am frontend-developer , gamer , designer , you-tuber and student . </p>
-                        <p className='about__right__text'>So, My name is Shoxrux. I'm 17 years old . I was born in Uzbekistan. I have learned many skills , HTML ,CSS  ,JAVASCRIPT ,REACT ,BOOTSTRAP ,TAILWIND ,GIT-HUB. AND MORE I can work with vercel.com , netlify.com , vite.js and and the most popular libraries material-ui.com and ant.design.com and other.</p>
-                        <p className='about__right__text'>
+                        <h2 data-aos="fade-left" className='about__right__title'>Hello , My name is Shoxrux</h2>
+                        <p data-aos="fade-left" className='about__right__text'>Welcome to my personal portfolio website,you can see my goal , my skills, and works in there.I have been learning social media for 3 years. And now I am frontend-developer , gamer , designer , you-tuber and student . </p>
+                        <p data-aos="fade-left" className='about__right__text'>So, My name is Shoxrux. I'm 17 years old . I was born in Uzbekistan. I have learned many skills , HTML ,CSS  ,JAVASCRIPT ,REACT ,BOOTSTRAP ,TAILWIND ,GIT-HUB. AND MORE I can work with vercel.com , netlify.com , vite.js and and the most popular libraries material-ui.com and ant.design.com and other.</p>
+                        <p data-aos="fade-left" className='about__right__text'>
                             I hope you like my work and results. You can learn about me through this website.</p>
                     </div>
                 </div>

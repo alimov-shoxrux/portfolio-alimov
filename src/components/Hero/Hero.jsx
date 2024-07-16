@@ -4,9 +4,17 @@ import Typed from 'typed.js';
 import close from '../../assets/img/close.svg'
 import share from '../../assets/img/share.svg'
 import { Link } from 'react-scroll';
-import wavebg from '../../assets/img/waveimg.svg'
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Hero() {
+    useEffect(() => {
+        setTimeout(() => {
+            Aos.init({ duration: 2000 });
+        }, 500);
+    }, []);
+
     const [clicked, setClicked] = useState(false);
 
     useEffect(() => {
@@ -31,13 +39,13 @@ function Hero() {
             <div className="container hero__content">
                 <div className="hero__container">
                     <div className="hero__left">
-                        <h1 className='hero__left__title'>Hello, Discover My Work </h1>
-                        <h1 className='animated__text'>
+                        <h1 data-aos="fade-left" className='hero__left__title'>Hello, Discover My Work</h1>
+                        <h1 data-aos="fade-right" className='animated__text'>
                             I'm a <span className='auto__type'></span>
                         </h1>
 
                         <div className='hero__left__into'>
-                            <Link to="content"
+                            <Link data-aos="fade-down" to="content"
                                 activeClass="active"
                                 spy={true}
                                 smooth={true}
@@ -46,7 +54,7 @@ function Hero() {
                                 className='hero__left__first'>
                                 Skills
                             </Link>
-                            <Link
+                            <Link data-aos="fade-down"
                                 activeClass="active"
                                 to="about"
                                 spy={true}

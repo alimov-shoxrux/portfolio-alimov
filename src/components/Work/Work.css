@@ -75,7 +75,7 @@
 
 .work__icon {
     color: white;
-    margin-top: 20px;
+    margin-top: 11%;
 }
 
 
@@ -98,6 +98,10 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+
+    .work__icon {
+        margin-top: 25%;
     }
 
 }
