@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import './Work.css'
 import baadiyat from '../../assets/img/baadiyat.png'
-import coffee from '../../assets/img/coffee.png'
 import movie from '../../assets/img/movie.png'
 import remont from '../../assets/img/remont.png'
 import sosgame from '../../assets/img/sos-game.png'
 import totc from '../../assets/img/totc.png'
 import pizza from '../../assets/img/react-pizza.png'
+import seedra from '../../assets/img/seedra.jpg'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -19,7 +19,18 @@ function Work() {
         <div className='Work' id='work'>
             <div className="container">
                 <div className="work__container">
-                    <div data-aos="fade-right"  className='work__div' >
+                    <div data-aos="fade-right" className='work__div' >
+                        <img src={seedra} alt="" />
+                        <div data-aos="fade-right" className='work__div__texts'>
+                            <h2 className='work__container__title'>Online - Shopping</h2>
+                            <p className='work__container__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum eius quis dolorum.</p>
+                            <a href='https://seedra-products.vercel.app/' className='link__icon'>
+                                <p className='work__visit' >visit</p>
+                                <i class="bi bi-box-arrow-up-left work__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-aos="fade-right" className='work__div' >
                         <img src={remont} alt="" />
                         <div data-aos="fade-right" className='work__div__texts'>
                             <h2 className='work__container__title'>Строй - Компаниа</h2>
@@ -30,7 +41,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div  data-aos="fade-down" className='work__div' >
+                    <div data-aos="fade-down" className='work__div' >
                         <img src={baadiyat} alt="" />
                         <div className='work__div__texts'>
                             <h2 className='work__container__title'>Baadiyat</h2>
@@ -41,7 +52,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div  data-aos="fade-left" className='work__div' >
+                    <div data-aos="fade-left" className='work__div' >
                         <img src={totc} alt="" />
                         <div className='work__div__texts'>
                             <h2 className='work__container__title'>Learning - Center</h2>
@@ -52,7 +63,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div  data-aos="fade-right" className='work__div' >
+                    <div data-aos="fade-right" className='work__div' >
                         <img src={pizza} alt="" />
                         <div className='work__div__texts'>
                             <h2 className='work__container__title'>Order - Food</h2>
@@ -63,7 +74,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div  data-aos="fade-down" className='work__div' >
+                    <div data-aos="fade-down" className='work__div' >
                         <img src={movie} alt="" />
                         <div className='work__div__texts'>
                             <h2 className='work__container__title'>Moive - Filter</h2>
@@ -74,7 +85,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div  data-aos="fade-left" className='work__div' >
+                    <div data-aos="fade-left" className='work__div' >
                         <img src={sosgame} alt="" />
                         <div className='work__div__texts'>
                             <h2 className='work__container__title'>Game - Landing</h2>
