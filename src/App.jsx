@@ -10,6 +10,7 @@ import Time from './components/Time/Time';
 import Footer from './components/Footer/Footer';
 import Wave from './components/Wave/Wave';
 import Work from './components/Work/Work';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -45,6 +46,7 @@ function App() {
       <Contact />
       <Wave />
       <Footer />
+      <Analytics />
       <button className="scrollTop" onClick={scrollTop} style={{ display: showScroll ? 'flex' : 'none' }}>
         <img src={up} alt="" />
       </button>
